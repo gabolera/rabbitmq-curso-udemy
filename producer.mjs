@@ -17,7 +17,10 @@ async function main() {
   })
 
   // Enviando mensagem via publish
-  channel.publish('', 'minha_fila', Buffer.from('Minha mensagem'))
+  let i=1
+  for(let i=0; i<1000;i++){
+    channel.publish('', 'minha_fila', Buffer.from(`Minha mensagem ${i}`))
+  }
   // Outra forma de enviar para a fila
   // channel.sendToQueue('minha_fila', Buffer.from('Mensagem vinda do sendToQueue'))
 
