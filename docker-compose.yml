@@ -1,0 +1,11 @@
+services:
+  rabbimtmq:
+    container_name: rabbimtmq
+    image: rabbitmq:3.11.26-management
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      - RABBITMQ_DEFAULT_USER=rabbitmq
+      - RABBITMQ_DEFAULT_PASS=curso
+      
