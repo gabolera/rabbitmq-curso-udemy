@@ -1,5 +1,7 @@
 ### Curso Rabbitmq Udemy
 
+Curso disponível em [Udemy](https://www.udemy.com/course/draft/5605260/?referralCode=307D3AFA5A5D0F55E56C)
+
 ### Conteúdos!
 
 | Aulas                             |
