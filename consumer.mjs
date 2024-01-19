@@ -14,7 +14,7 @@ async function main() {
     durable: true
   })
 
-  channel.prefetch(5)
+  await channel.prefetch(5)
 
   channel.consume("minha_fila", (data) => {
     console.log(data.content.toString())
